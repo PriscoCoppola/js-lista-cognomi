@@ -11,5 +11,11 @@ var listaCognomi = ['bianchi','schiavone','ricciardi','tolino','palmieri','di la
 
 listaCognomi.push(cognome);
 
-console.log(listaCognomi);
+console.log(listaCognomi.sort());
+
+for (var i = 0; i < listaCognomi.length; i++) {
+    if (listaCognomi[i] === cognome) {
+        console.log(i + 1);
+    }
+}
 
