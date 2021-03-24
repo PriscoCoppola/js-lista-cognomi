@@ -1,0 +1,52 @@
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    background-color: lightcoral;
+    text-transform: uppercase;
+    color: white;
+}
+
+/* HEADER */
+h1 {
+    margin: 50px 0;
+    text-shadow: 2px 2px rgba(0, 0, 0, .5);
+}
+
+/* MAIN */
+ol {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+li {
+    margin: 20px 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 5px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#insert {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    padding: 0 5px;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 50%;
+}

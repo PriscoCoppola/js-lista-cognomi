@@ -5,17 +5,23 @@
     4. scrivi anche la posizione "umana", 1 oppure 2 oppure 3 oppure ecc... (non 0 oppure 1 oppure 2 oppure ecc.. tipici degli array), del nuovo utente inserito sopra all'interno dell'array, dopo l'ordinamento alfabetico
 */
 
+// Info
 var cognome = prompt('Inserisci il tuo cognome');
-
 var listaCognomi = ['bianchi','schiavone','ricciardi','tolino','palmieri','di lauri','vuotto'];
+var items = ''
 
+// Inserimento cognome utente e ordine lista
 listaCognomi.push(cognome);
+listaCognomi = listaCognomi.sort()
 
-console.log(listaCognomi.sort());
-
+// Ciclo for and inner HTML
 for (var i = 0; i < listaCognomi.length; i++) {
+    
+    items += '<li>' + listaCognomi[i] + '</li>';
+    document.getElementById('list').innerHTML = items;
+    
     if (listaCognomi[i] === cognome) {
-        console.log(i + 1);
+        document.getElementById('insert').innerHTML = (i + 1);
     }
 }
 
